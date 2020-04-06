@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MediumTextViewLibrary.iml" filepath="$PROJECT_DIR$/MediumTextViewLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/html-textview.iml" filepath="$PROJECT_DIR$/html-textview.iml" group="html-textview" />
+      <module fileurl="file://$PROJECT_DIR$/app/html-textview-app.iml" filepath="$PROJECT_DIR$/app/html-textview-app.iml" group="html-textview/app" />
+      <module fileurl="file://$PROJECT_DIR$/mediumtextview/html-textview-mediumtextview.iml" filepath="$PROJECT_DIR$/mediumtextview/html-textview-mediumtextview.iml" group="html-textview/mediumtextview" />
       <module fileurl="file://$PROJECT_DIR$/mediumtextview/mediumtextview.iml" filepath="$PROJECT_DIR$/mediumtextview/mediumtextview.iml" />
     </modules>
   </component>

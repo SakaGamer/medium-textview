@@ -1,13 +1,14 @@
 package io.github.angebagui.mediumtextviewapp;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
 //https://github.com/angebagui/medium-textview/blob/master/screenshot/Screenshot_2016-08-14-19-59-32.png
 //https://github.com/angebagui/medium-textview/blob/master/screenshot/Screenshot_2016-08-14-19-59-48.png
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import io.github.angebagui.mediumtextview.MediumTextView;
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         Content content = Content.deserialize(this);
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         if(content == null){
             return;
         }
-        MediumTextView mediumTextView = (MediumTextView)findViewById(R.id.medium_text_view);
+        MediumTextView mediumTextView = findViewById(R.id.medium_text_view);
         mediumTextView.setText(content.getContent());
 
 
